@@ -40,23 +40,25 @@
 } */
 
 .register_btn{
-  width: 5rem;
-  height: 2rem;
-  background: linear-gradient(180deg, rgba(222, 249, 250, 0.9) -43.27%, rgba(190, 243, 245, 0.9) -21.24%, rgba(157, 237, 240, 0.9) 12.19%, rgba(125, 231, 235, 0.9) 29.82%, rgba(92, 225, 230, 0.9) 51.94%, rgba(51, 187, 207, 0.9) 90.29%);
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #A9A9A9;
+  /* background: linear-gradient(180deg, rgba(222, 249, 250, 0.9) -43.27%, rgba(190, 243, 245, 0.9) -21.24%, rgba(157, 237, 240, 0.9) 12.19%, rgba(125, 231, 235, 0.9) 29.82%, rgba(92, 225, 230, 0.9) 51.94%, rgba(51, 187, 207, 0.9) 90.29%); */
   border: none;
   border-radius: 8px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   color: #00040E;
   cursor: pointer;
   margin-top: 5px;
 }
 .side_btn{
-  width: 2rem;
-  height: 2rem;
-  background: linear-gradient(180deg, rgba(222, 249, 250, 0.9) -43.27%, rgba(190, 243, 245, 0.9) -21.24%, rgba(157, 237, 240, 0.9) 12.19%, rgba(125, 231, 235, 0.9) 29.82%, rgba(92, 225, 230, 0.9) 51.94%, rgba(51, 187, 207, 0.9) 90.29%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #A9A9A9;
+  /* background: linear-gradient(180deg, rgba(222, 249, 250, 0.9) -43.27%, rgba(190, 243, 245, 0.9) -21.24%, rgba(157, 237, 240, 0.9) 12.19%, rgba(125, 231, 235, 0.9) 29.82%, rgba(92, 225, 230, 0.9) 51.94%, rgba(51, 187, 207, 0.9) 90.29%); */
   border: none;
   border-radius: 50%;
   font-family: 'Poppins';

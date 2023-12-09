@@ -21,17 +21,17 @@ const App = () => {
 
   const renderControlButtons = () => (
     <div className="controls">
-      <button className="side_btn" onClick={() => handleSizeChange(videoSize - 0.1)}>-</button>
+      <button className="side_btn" onClick={() => handleSizeChange(videoSize - 0.025)}>-</button>
       <button className="register_btn" onClick={handlePlay}>Start</button>
-      <button className="side_btn" onClick={() => handleSizeChange(videoSize + 0.1)}>+</button>
+      <button className="side_btn" onClick={() => handleSizeChange(videoSize + 0.025)}>+</button>
     </div>
   );
 
   return (
     <div className="app">
-      <div className='home'>
-        {isPlaying ? null : (<><div className="eclipse"></div></>)}
-        <div className="flex" >
+      <div className='home' style={{gridTemplateRows: isPlaying?'100% 0%':'70% 30%',overflow:'hidden'}} >
+        {/* {isPlaying ? null : (<><div className="eclipse"></div></>)} */}
+        <div className="flex" style={{position:'relative'}} >
           <ReactPlayer
             ref={playerRef}
             url="/video.mp4"
@@ -40,6 +40,7 @@ const App = () => {
             height="auto"
             controls={false}
             onEnded={handleEnd}
+            style={{position: 'absolute'}}
           />
         </div>
         <div className="flex_align" >
