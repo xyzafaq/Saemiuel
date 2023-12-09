@@ -23,6 +23,8 @@
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+  position: absolute;
+  bottom: 50px;
 }
 .flex{
   display: flex;
