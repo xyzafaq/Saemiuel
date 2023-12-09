@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home{
+  display: grid;
+    grid-template-rows: 70% 30%;
+}
+.home div{
+  /* border: 1px solid white; */
+}
+.controls {
+  z-index: 5;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.flex{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.flex_align{
+  display: flex;
+  justify-content: center;
 }
+/* button {
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.register_btn{
+  width: 5rem;
+  height: 2rem;
+  background: linear-gradient(180deg, rgba(222, 249, 250, 0.9) -43.27%, rgba(190, 243, 245, 0.9) -21.24%, rgba(157, 237, 240, 0.9) 12.19%, rgba(125, 231, 235, 0.9) 29.82%, rgba(92, 225, 230, 0.9) 51.94%, rgba(51, 187, 207, 0.9) 90.29%);
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #00040E;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.side_btn{
+  width: 2rem;
+  height: 2rem;
+  background: linear-gradient(180deg, rgba(222, 249, 250, 0.9) -43.27%, rgba(190, 243, 245, 0.9) -21.24%, rgba(157, 237, 240, 0.9) 12.19%, rgba(125, 231, 235, 0.9) 29.82%, rgba(92, 225, 230, 0.9) 51.94%, rgba(51, 187, 207, 0.9) 90.29%);
+  border: none;
+  border-radius: 50%;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #00040E;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.eclipse{
+  overflow: hidden;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 100px;
+  bottom: 87px;
+  z-index: 2;
+  background: rgb(57 179 193 / 29%);
+  filter: blur(60px);
+  animation: scaleAnimation 5s infinite;
+}
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+    left: 100px;
+    bottom: 87px;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: scale(1.2);
+    left: 120px;
+    bottom: 100px;
+  }
+  50% {
+    transform: scale(1.2);
+    left: 140px;
+    bottom: 90px;
+  }
+  100% {
+    transform: scale(1);
+    left: 100px;
+    bottom: 87px;
   }
 }
