@@ -29,7 +29,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className='home' style={{gridTemplateRows: '100% 0%',overflow:'hidden'}} >
+      <div className='home' style={{gridTemplateRows:'80% 20%',overflow:'hidden'}} >
         {/* {isPlaying ? null : (<><div className="eclipse"></div></>)} */}
         <div className="flex" style={{position:'relative'}} >
           <ReactPlayer
@@ -39,6 +39,7 @@ const App = () => {
             width={`calc(100% * ${videoSize})`}
             height="auto"
             controls={false}
+            playsinline={true}
             config={{
               file: {
                 attributes: {
